@@ -38,10 +38,10 @@ links:
     url: /articles/
   - title: The Team
     url: /the-team/
-  - title: Classes
-    url: /classes/
+  # - title: Classes
+  #   url: /classes/
   - title: Join Us
-    url: http://mademistakes.com
+    url: http://gdiboulder.com/join
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
