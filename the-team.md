@@ -10,3 +10,8 @@ image:
   creditlink:
 share:
 ---
+
+## Co-founders
+### Cara Jo Miller
+
+### Kate Bierbaum
