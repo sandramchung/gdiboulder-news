@@ -5,22 +5,22 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>The GDI Boulder Team &#8211; Girl Develop It Boulder</title>
-<meta name="description" content="Offical news from GDI Boulder">
+<title>Our Team &#8211; Girl Develop It Boulder</title>
+<meta name="description" content="">
 <meta name="keywords" content="">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://localhost:4000/images/site-logo.png">
-<meta name="twitter:title" content="The GDI Boulder Team">
-<meta name="twitter:description" content="Offical news from GDI Boulder">
+<meta name="twitter:title" content="Our Team">
+<meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@gdiboulder">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="The GDI Boulder Team">
-<meta property="og:description" content="Offical news from GDI Boulder">
+<meta property="og:title" content="Our Team">
+<meta property="og:description" content="">
 <meta property="og:url" content="http://localhost:4000/the-team/">
 <meta property="og:site_name" content="Girl Develop It Boulder">
 
@@ -64,7 +64,7 @@
 
 </head>
 
-<body id="page">
+<body id="page" class="team">
 
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
@@ -88,21 +88,21 @@
 				 
 			</li>
 	        
+			<li>
+				
+					<a href="http://localhost:4000/classets">Classes</a>
+				 
+			</li>
+	        
 	        <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
-	        <li class="dosearch"><i class="icon-search"></i> Search</li>
+	        
 	    </ul>
 	</nav>
 </div><!-- /.navigation-wrapper -->
 
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 
-<div class="search-wrapper">
-	<div class="search-form">
-		<input type="text" class="search-field" placeholder="Search...">
-		<i class="icon-remove-sign icon-2x"></i>
-		<ul class="search-results post-list"></ul><!-- /.search-results -->
-	</div><!-- /.search-form -->
-</div><!-- ./search-wrapper -->
+
 
 <header class="masthead">
 	<div class="wrap">
@@ -110,7 +110,7 @@
     		<a href="http://localhost:4000" class="site-logo" rel="home" title="Girl Develop It Boulder"><img src="http://localhost:4000/images/site-logo.png" width="200" height="200" alt="Girl Develop It Boulder logo" class="animated fadeInUp"></a>
         
         <h1 class="site-title animated fadeIn"><a href="http://localhost:4000">Girl Develop It Boulder</a></h1>
-		<h2 class="site-description animated fadeIn" itemprop="description">Offical news from GDI Boulder</h2>
+		<h2 class="site-description animated fadeIn" itemprop="description"></h2>
 	</div>
 </header><!-- /.masthead -->
 
@@ -120,10 +120,28 @@
 
     <div class="entry-wrapper">
       <header class="entry-header">
-        <h1 class="entry-title">The GDI Boulder Team</h1>
+        <h1 class="entry-title">Our Team</h1>
       </header>
       <div class="entry-content">
-        
+        <h2 id="co-founders">Co-founders</h2>
+
+<p><img src="/images/cojo.jpg" alt="Cara Jo" /></p>
+
+<h3 id="cara-jo-miller">Cara Jo Miller</h3>
+
+<p>Cara Jo is a Boulder transplant by way of Detroit, where she helped start the Girl Develop It’s Detroit chapter. She coded her first website back in 1996, which was a gallery for her Pokemon drawings. After moving to Detroit, she moved beyond HTML/CSS to PHP and while simultaneous becoming obsessed with WordPress. After five years of urban living in Detroit, Cara Jo decided mountain living was for her. She’d heard the tech and startup scenes in Boulder were great and decided to take the plunge out west. She now wrangles pixels and writes code as the Lead Designer for Simple Energy. Getting more women involved in tech has always been one of Cara Jo’s passions, and that’s what she brings to Boulder.</p>
+
+<p><em>In addition to being Boulder’s Co-Leader, Cara Jo teaches Introduction &amp; Intermediate HTML/CSS classes, &amp; various workshops.</em></p>
+
+<hr />
+
+<p><img src="/images/kate.jpg" alt="Kate" /></p>
+
+<h3 id="kate-bierbaum">Kate Bierbaum</h3>
+
+<p>Kate is a software developer who has been writing code for over a decade. She caught the coding bug in high school making websites for fun and hasn’t stopped since. After making it formal by studying Computer Science &amp; Mathematics at Dickinson College, Kate is now a professional developer who has worked at various start-ups in Washington D.C. and Boulder, CO. In her spare time she enjoys hiking with her dog and cycling.</p>
+
+<p><em>In addition to being Boulder’s Co-Leader, Kate teaches our Introduction to Javascript &amp; jQuery class &amp; also TAs our HTML/CSS classes.</em></p>
 
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
@@ -151,41 +169,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
-
-<!-- Jekyll Simple Search option -->
-<script>
-  $(document).ready(function() {
-      $('.search-field').simpleJekyllSearch({
-          jsonFile : 'http://localhost:4000/search.json',
-          searchResults : '.search-results',
-          template : '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></article></li>',
-          noResults: '<p>Nothing found.</p>'
-        });
-  });
-
-  (function( $, window, undefined ) {
-    
-     var bs = {
-          close: $(".icon-remove-sign"),
-          searchform: $(".search-form"),
-          canvas: $("body"),
-          dothis: $('.dosearch')
-      };
-    
-    bs.dothis.on('click', function() {
-      $('.search-wrapper').css({ display: "block" });
-      bs.searchform.toggleClass('active');
-      bs.searchform.find('input').focus();
-      bs.canvas.toggleClass('search-overlay');
-    });
-    
-      bs.close.on('click', function() {
-        $('.search-wrapper').removeAttr( 'style' );
-        bs.searchform.toggleClass('active');
-        bs.canvas.removeClass('search-overlay');
-    });
-  })( jQuery, window );
-</script>
 
 
 

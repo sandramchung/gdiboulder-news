@@ -1,33 +1,27 @@
 ---
 layout: page
 permalink: /about/
-title: About the Jekyll Theme
-tags: [Jekyll, theme, simple, minimal, minimalism, responsive]
+title: About Girl Develop It
+tags: []
 modified: 2013-09-13
 image:
-  feature: so-simple-sample-image-4.jpg
-  credit: Michael Rose
-  creditlink: http://mademistakes.com
+  feature: python-header.png
+  credit: Introduction to Python
 ---
+## Our Mission
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes).
+Girl Develop It is an international organization, that exists to provide affordable and accessible programs to women who want to learn software development through mentorship and hands-on instruction.
 
-## So Simple Theme is all about:
+## Our Vision
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations. 
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Disqus comments if you choose to enable.
-* Simple and clear permalink structure[^1].
-* Tags for [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) for a better social sharing experience.
-* Vanilla [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/articles/so-simple-theme/code-highlighting-post/) to make your code examples look snazzy.
-* Simple search that overlays results based on post title.
-* [Grunt build script]({{ site.url }}/theme-setup/index.html#theme-development) for easier theme development.
-* [Sitemap](https://github.com/mmistakes/so-simple-theme/blob/master/sitemap.xml) for search engines
+Our vision is to create a network of empowered women who feel confident in their abilities to code and build beautiful web and mobile applications. By teaching women around the world from diverse backgrounds to learn software development, we can help women improve their careers and confidence in their everyday lives.
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+## Our Values
 
-[^1]: Example: *domain.com/category-name/post-title*
+We are committed to making sure women of all ages, races, education levels, income, and upbringing can build confidence in their skill set to develop web and mobile applications. Our goal is to provide powerful hands-on programs to women seeking professional help in software development and create basic to advanced web and mobile applications
+
+## Get Involved
+
+To attend our workshops and classes, please join our [Meetup](http://gdiboulder.com/join). By joining Meetup you can RSVP to upcoming workshops and be notified of upcoming events.
+
+If you're interested in supporting GDI Boulder, feel free to e-mail us with your ideas at <boulder@girldevelopit.com>.

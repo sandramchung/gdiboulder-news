@@ -88,21 +88,21 @@
 				 
 			</li>
 	        
+			<li>
+				
+					<a href="http://localhost:4000/classets">Classes</a>
+				 
+			</li>
+	        
 	        <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
-	        <li class="dosearch"><i class="icon-search"></i> Search</li>
+	        
 	    </ul>
 	</nav>
 </div><!-- /.navigation-wrapper -->
 
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 
-<div class="search-wrapper">
-	<div class="search-form">
-		<input type="text" class="search-field" placeholder="Search...">
-		<i class="icon-remove-sign icon-2x"></i>
-		<ul class="search-results post-list"></ul><!-- /.search-results -->
-	</div><!-- /.search-form -->
-</div><!-- ./search-wrapper -->
+
 
 <header class="masthead">
 	<div class="wrap">
@@ -110,7 +110,7 @@
     		<a href="http://localhost:4000" class="site-logo" rel="home" title="Girl Develop It Boulder"><img src="http://localhost:4000/images/site-logo.png" width="200" height="200" alt="Girl Develop It Boulder logo" class="animated fadeInUp"></a>
         
         <h1 class="site-title animated fadeIn"><a href="http://localhost:4000">Girl Develop It Boulder</a></h1>
-		<h2 class="site-description animated fadeIn" itemprop="description">Offical news from GDI Boulder</h2>
+		<h2 class="site-description animated fadeIn" itemprop="description"></h2>
 	</div>
 </header><!-- /.masthead -->
 
@@ -302,7 +302,7 @@
     <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/other-page/</span>
   <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">External Link</span>
     <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://mademistakes.com</span>
-    <span class="l-Scalar-Plain">external</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span> 
+    <span class="l-Scalar-Plain">external</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span>
 </code></pre></div>
 
 <h4 id="simple-search">Simple Search</h4>
@@ -344,7 +344,7 @@ Creating new post: _posts/2014-02-10-my-awesome-post.md
 
 <p>A good rule of thumb is to keep feature images nice and wide so you don’t push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices. If you want to serve these images responsively I’d suggest looking at <a href="https://github.com/scottjehl/picturefill">Picturefill</a> or <a href="http://adaptive-images.com/">Adaptive Images</a>.</p>
 
-<p>The two layouts make the assumption that the feature images live in the <em>images</em> folder. To add a feature image to a post or page just include the filename in the front matter like so. </p>
+<p>The two layouts make the assumption that the feature images live in the <em>images</em> folder. To add a feature image to a post or page just include the filename in the front matter like so.</p>
 
 <div class="highlight"><pre><code class="yaml"><span class="l-Scalar-Plain">image</span><span class="p-Indicator">:</span>
   <span class="l-Scalar-Plain">feature</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">feature-image-filename.jpg</span>
@@ -422,7 +422,7 @@ Creating new post: _posts/2014-02-10-my-awesome-post.md
 
 <h2 id="license">License</h2>
 
-<p>This theme is free and open source software, distributed under the <a href="http://localhost:4000/LICENSE">GNU General Public License</a> version 2 or later. So feel free to to modify this theme to suit your needs. </p>
+<p>This theme is free and open source software, distributed under the <a href="http://localhost:4000/LICENSE">GNU General Public License</a> version 2 or later. So feel free to to modify this theme to suit your needs.</p>
 
 <p>If you’d like to give me credit somewhere on your blog or tweet a shout out to <a href="https://twitter.com/mmistakes">@mmistakes</a>, that would be pretty sweet.</p>
 
@@ -460,41 +460,6 @@ Creating new post: _posts/2014-02-10-my-awesome-post.md
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
-
-<!-- Jekyll Simple Search option -->
-<script>
-  $(document).ready(function() {
-      $('.search-field').simpleJekyllSearch({
-          jsonFile : 'http://localhost:4000/search.json',
-          searchResults : '.search-results',
-          template : '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></article></li>',
-          noResults: '<p>Nothing found.</p>'
-        });
-  });
-
-  (function( $, window, undefined ) {
-    
-     var bs = {
-          close: $(".icon-remove-sign"),
-          searchform: $(".search-form"),
-          canvas: $("body"),
-          dothis: $('.dosearch')
-      };
-    
-    bs.dothis.on('click', function() {
-      $('.search-wrapper').css({ display: "block" });
-      bs.searchform.toggleClass('active');
-      bs.searchform.find('input').focus();
-      bs.canvas.toggleClass('search-overlay');
-    });
-    
-      bs.close.on('click', function() {
-        $('.search-wrapper').removeAttr( 'style' );
-        bs.searchform.toggleClass('active');
-        bs.canvas.removeClass('search-overlay');
-    });
-  })( jQuery, window );
-</script>
 
 
 
